@@ -82,6 +82,9 @@ export const projects = [
     category: "Front-End / Web Development",
     description:
       "Responsive landing page project focused on modern UI, responsive design and user experience.",
+    challenge: "Create a clear digital presence with a responsive browsing experience.",
+    solution: "Built a focused interface with semantic HTML, reusable styling and responsive layouts.",
+    outcome: "A polished landing page ready for desktop and mobile audiences.",
     stack: ["HTML", "CSS", "JavaScript"],
     href: "https://github.com/Fabianooliveirasilva/landing_page_beco_do_cau",
     demo: "#",
@@ -109,6 +112,7 @@ export const experience = [
       "Bug reporting",
       "QA workflows",
     ],
+    result: "Focused on making quality visible earlier through repeatable test and documentation workflows.",
   },
   {
     period: "2025 — 2026",
@@ -122,6 +126,7 @@ export const experience = [
       "Git/GitHub",
       "Modern web development",
     ],
+    result: "Delivered responsive interfaces with a practical understanding of APIs, version control and user experience.",
   },
 ] as const;
 

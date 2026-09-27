@@ -37,7 +37,7 @@ export default function Home() {
 
           <div className="hero-video mb-12 overflow-hidden rounded-[1.75rem] border border-[var(--line)] bg-[var(--panel)] shadow-[0_24px_80px_var(--shadow)]">
             <video
-              className="aspect-[16/7] w-full object-cover"
+              className="aspect-[16/8] w-full object-cover sm:aspect-[16/6]"
               autoPlay
               muted
               loop
@@ -246,6 +246,20 @@ export default function Home() {
                         <p className="mt-5 max-w-md text-base leading-7 text-[var(--text-soft)]">
                           {project.description}
                         </p>
+                        <div className="mt-6 grid gap-4 border-t border-[var(--line)] pt-5 text-sm leading-6 text-[var(--text-soft)]">
+                          <div>
+                            <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-[var(--accent)]">Challenge</p>
+                            <p className="mt-1">{project.challenge}</p>
+                          </div>
+                          <div>
+                            <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-[var(--accent)]">Approach</p>
+                            <p className="mt-1">{project.solution}</p>
+                          </div>
+                          <div>
+                            <p className="font-mono text-[0.62rem] uppercase tracking-[0.18em] text-[var(--accent)]">Outcome</p>
+                            <p className="mt-1">{project.outcome}</p>
+                          </div>
+                        </div>
                       </div>
 
                       <div className="mt-8">
@@ -332,6 +346,9 @@ export default function Home() {
                     <h3 className="mt-5 text-2xl font-semibold tracking-[-0.05em] text-[var(--text)]">
                       {job.role}
                     </h3>
+                    <p className="mt-4 border-l-2 border-[var(--accent)] pl-4 text-sm leading-6 text-[var(--text-soft)]">
+                      {job.result}
+                    </p>
                     <ul className="mt-6 space-y-3 text-base leading-7 text-[var(--text-soft)]">
                       {job.focus.map((item) => (
                         <li key={item} className="flex gap-3">
