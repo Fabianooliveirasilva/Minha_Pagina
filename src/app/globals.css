@@ -287,6 +287,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -295,6 +296,7 @@ body {
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -317,5 +319,18 @@ body {
 
   .hero-name {
     animation: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .language-toggle {
+    gap: 0;
+    padding: 0.15rem;
+  }
+
+  .language-toggle button {
+    min-width: 2rem;
+    padding-inline: 0.25rem;
+    font-size: 0.52rem;
   }
 }
